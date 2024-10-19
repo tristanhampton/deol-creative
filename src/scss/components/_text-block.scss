@@ -1,3 +1,11 @@
 .component--text-block {
   padding: 0 var(--page-margin-500);
+
+  &.style--card {
+    .component-wrapper {
+      padding: var(--padding-500) var(--padding-300);
+      background-color: #FFF;
+      border-radius: 2rem;
+    }
+  }
 }

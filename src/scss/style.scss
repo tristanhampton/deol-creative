@@ -18,6 +18,7 @@
 /* Components
  * ----------------------------------------------- */
 @import "components/banner-default";
+@import "components/banner--home";
 @import "components/text-block";
 @import "components/table";
 @import "components/child-pages";
@@ -25,3 +26,10 @@
 @import "components/media";
 @import "components/media-gallery";
 @import "components/form";
+@import "components/component--callouts";
+@import "components/component--quote";
+@import "components/component--cta";
+@import "components/component--cta--styled";
+@import "components/component--quote-card";
+@import "components/component--pills";
+@import "components/layout--columns";

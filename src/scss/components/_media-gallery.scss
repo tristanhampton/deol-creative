@@ -1,7 +1,11 @@
 .component--media-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0 var(--page-margin-200);
 
   .gallery-wrapper {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: var(--padding-200);
@@ -13,5 +17,11 @@
     overflow: hidden;
     max-width: max-content;
     margin: 0;
+    aspect-ratio: 1 / 1;
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
   }
 }

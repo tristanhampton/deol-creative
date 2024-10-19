@@ -1,6 +1,10 @@
 // default spacing between components
 *+.component {
   margin-top: var(--component-margin-top-default);
+
+  &.spacing--reduced {
+    margin-top: var(--component-margin-top-first);
+  }
 }
 
 // first component after banner has smaller margin

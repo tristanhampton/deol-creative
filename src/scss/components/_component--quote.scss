@@ -1,0 +1,16 @@
+.component--quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--padding-200);
+  padding: 0 var(--page-margin-500);
+  text-align: center;
+
+  * {
+    margin: 0 !important;
+  }
+
+  h2 {
+    font-size: var(--font-size);
+  }
+}

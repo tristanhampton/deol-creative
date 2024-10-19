@@ -3,33 +3,216 @@ title: "Home Page"
 meta_description: "The home page of this 11ty site starter"
 og_title: "11ty Starter Home Page"
 ---
-<section class="banner style--default">
-  <h1>11ty Starter</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quaerat ducimus nobis deleniti doloremque minus? Ullam natus earum ipsum odit. Dolorem dolor, magnam veniam consectetur beatae minima unde quas dicta.</p>
+<section class="banner banner--home">
+  <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <a href="" class="btn-primary">See plans</a>
 </section>
 
-<section class="component component--child-pages">
-  <h2>Child Pages</h2>
-  <ul class="flex-wrapper">
-    <li>
-      <a href="/kitchen-sink">
-        <p class="h3">Kitchen Sink</p>
-        <p class="description">Landing page for testing</p>
-      </a>
-    </li>
+<section class="component component--callouts">
+  <h2>Lorem ipsum dolor sit amet consectetur. Lorem, ipsum.</h2>
+  <p class="text--large">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, sapiente!</p>
 
-    <li>
-      <a href="/kitchen-sink/text-styles">
-        <p class="h3">Text Styles</p>
-        <p class="description">Examples of site text styles</p>
-      </a>
-    </li>
+  <div class="flex-wrapper">
+    <div class="callouts__callout">
+      <span class="icon"></span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
 
-    <li>
-      <a href="/about">
-        <p class="h3">About</p>
-        <p class="description">Just an empty about page</p>
+    <div class="callouts__callout">
+      <span class="icon"></span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="callouts__callout">
+      <span class="icon"></span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+
+  <a href="/" class="btn-primary">Lorem ipsum</a>
+</section>
+
+<section class="component component--quote">
+  <h2>They said it best</h2>
+  <p class="h3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, deleniti!"</p>
+  <cite class="h5">John Doe</cite>
+</section>
+
+<section class="component component--cta">
+  <h2>Lorem "ipsum dolor sit amet consectetur" adipisicing elit.</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, quia? Eius quasi deserunt, vel nisi deleniti blanditiis nostrum dolorem eum!</p>
+  <a href="" class="btn-primary">See plans</a>
+</section>
+
+<div class="component columns count--2">
+  <div class="component component--quote-card style--stretch">
+    <div class="component-wrapper">
+      <p class="h4">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, saepe."</p>
+      <cite>John Doe</cite>
+    </div>
+  </div>
+  <div class="component component--text-block">
+    <h2 class="sr-only">Working with us</h2>
+    <h3 class="h3">Totally async</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, blanditiis debitis recusandae vel ratione voluptatum.</p>
+
+    <h3 class="h3">Manage with Trello</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sed placeat numquam iusto esse laboriosam!</p>
+
+    <h3 class="h3">Invite your team</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, asperiores!</p>
+  </div>
+</div>
+
+<section class="component component--callouts">
+  <h2>Lorem ipsum dolor sit amet consectetur. Lorem, ipsum.</h2>
+  <p class="text--large">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, sapiente!</p>
+
+  <div class="flex-wrapper">
+    <div class="callouts__callout">
+      <span class="icon"></span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="callouts__callout">
+      <span class="icon"></span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="callouts__callout">
+      <span class="icon"></span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="callouts__callout">
+      <span class="icon"></span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="callouts__callout">
+      <span class="icon"></span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="callouts__callout">
+      <span class="icon"></span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+</section>
+
+</hr class="display">
+
+<section class="component component--pills">
+  <h2>Lorem, ipsum dolor.</h2>
+
+  <div class="flex-wrapper">
+    <span class="pills__pill">Landing pages</span>
+    <span class="pills__pill">Mobile apps</span>
+    <span class="pills__pill">Logos</span>
+    <span class="pills__pill">Branding</span>
+    <span class="pills__pill">Slide decks</span>
+    <span class="pills__pill">Social media</span>
+    <span class="pills__pill">Icons</span>
+    <span class="pills__pill">Brand guides</span>
+    <span class="pills__pill">Blog graphics</span>
+  </div>
+</section>
+
+<div class="component component--media-gallery spacing--reduced">
+  <div class="gallery-wrapper">
+    {% galleryItem '/img/og-default.jpg', 'Just a default image, but as a caption', 'gallery-1' %}
+    {% galleryItem '/img/og-default.jpg', 'Just a default image, but as a caption', 'gallery-1' %}
+    {% galleryItem '/img/og-default.jpg', 'Just a default image, but as a caption', 'gallery-1' %}
+    {% galleryItem '/img/og-default.jpg', 'Just a default image, but as a caption', 'gallery-1' %}
+    {% galleryItem '/img/og-default.jpg', 'Just a default image, but as a caption', 'gallery-1' %}
+    {% galleryItem '/img/og-default.jpg', 'Just a default image, but as a caption', 'gallery-1' %}
+  </div>
+
+  <a href="" class="btn-primary">See more work</a>
+</div>
+
+<div class="component columns count--2">
+  <div class="component component--cta--styled">
+    <div class="component-wrapper">
+      <h2 class="h1">Lorem ipsum</h2>
+      <a href="" class="btn-display">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, saepe.</p>
       </a>
-    </li>
-  </ul>
+      <a href="" class="btn-display">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, saepe.</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="component component--text-block style--card">
+    <div class="component-wrapper">
+      <h2>Membership</h2>
+      <p class="h3">$4,995/m</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, autem?</p>
+      <hr>
+      <p>What's included:</p>
+      <ul class="list-columns">
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+      </ul>
+
+      <div class="button-wrapper">
+        <a href="/" class="btn-primary">Get started</a>
+        <a href="/" class="btn-secondary">Book a call</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="component component--accordions">
+  <h2>Commonly asked questions</h2>
+  <details>
+    <summary>Lorem ipsum, dolor sit amet.</summary>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facere recusandae ab iure accusantium deserunt? Animi non omnis ad aliquam!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facere recusandae ab iure accusantium deserunt? Animi non omnis ad aliquam!</p>
+  </details>
+
+  <details>
+    <summary>Lorem ipsum, dolor sit amet.</summary>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facere recusandae ab iure accusantium deserunt? Animi non omnis ad aliquam!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facere recusandae ab iure accusantium deserunt? Animi non omnis ad aliquam!</p>
+  </details>
+
+  <details>
+    <summary>Lorem ipsum, dolor sit amet.</summary>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facere recusandae ab iure accusantium deserunt? Animi non omnis ad aliquam!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facere recusandae ab iure accusantium deserunt? Animi non omnis ad aliquam!</p>
+  </details>
+
+  <details>
+    <summary>Lorem ipsum, dolor sit amet.</summary>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facere recusandae ab iure accusantium deserunt? Animi non omnis ad aliquam!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facere recusandae ab iure accusantium deserunt? Animi non omnis ad aliquam!</p>
+  </details>
+
+  <details>
+    <summary>Lorem ipsum, dolor sit amet.</summary>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facere recusandae ab iure accusantium deserunt? Animi non omnis ad aliquam!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facere recusandae ab iure accusantium deserunt? Animi non omnis ad aliquam!</p>
+  </details>
+
+  <details>
+    <summary>Lorem ipsum, dolor sit amet.</summary>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facere recusandae ab iure accusantium deserunt? Animi non omnis ad aliquam!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facere recusandae ab iure accusantium deserunt? Animi non omnis ad aliquam!</p>
+  </details>
+</section>
+
+<section class="component component--cta">
+  <h2>Lorem ipsum dolor sit amet (consectetur adipisicing elit)</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, quia? Eius quasi deserunt, vel nisi deleniti blanditiis nostrum dolorem eum!</p>
+  <a href="" class="btn-primary">See plans</a>
 </section>

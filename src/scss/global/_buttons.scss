@@ -34,7 +34,7 @@
   @include btn-defaults;
   background-color: var(--text-primary);
   color: var(--text-invert-primary);
-  border: var(--button-primary-border);
+  border: 0.2rem solid var(--text-primary);
 
   &:visited {
     color: var(--text-invert-primary);
@@ -49,19 +49,38 @@
 
 @mixin btn-secondary {
   @include btn-defaults;
-  background-color: var(--button-secondary-surface);
-  border: var(--button-secondary-border);
-  color: var(--button-secondary-color);
+  background-color: transparent;
+  border: 0.2rem solid var(--text-primary);
+  color: var(--text-primary);
 
   &:visited {
-    color: var(--button-secondary-color);
+    color: var(--text-primary);
   }
 
   &:hover,
   &:focus {
-    background-color: var(--button-secondary-surface-hover);
-    border: var(--button-secondary-border-hover);
-    color: var(--button-secondary-color-hover);
+    background-color: var(--text-primary);
+    color: var(--text-invert-primary);
+  }
+}
+
+@mixin btn-display {
+  @include btn-defaults;
+  padding: var(--padding-200);
+  border: 0.1rem solid #FFF;
+  color: #FFF;
+  padding-right: var(--padding-400);
+
+  &:visited {
+    color: #FFF;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  p:first-child {
+    font-size: var(--heading-4);
   }
 }
 
@@ -71,4 +90,8 @@
 
 .btn-secondary {
   @include btn-secondary;
+}
+
+.btn-display {
+  @include btn-display;
 }

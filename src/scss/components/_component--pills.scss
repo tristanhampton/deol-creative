@@ -1,0 +1,24 @@
+.component--pills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 var(--page-margin-500);
+  text-align: center;
+
+  .flex-wrapper {
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: var(--padding-100);
+  }
+
+  .pills__pill {
+    display: block;
+    padding: var(--padding-100) var(--padding-200);
+    border-radius: 2rem;
+    text-align: center;
+    background-color: #888;
+  }
+}

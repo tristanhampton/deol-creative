@@ -1,8 +1,6 @@
 /* Single Accordion
  * ----------------------------------------------- */
 .component--accordions details {
-  border: var(--border-thickness-200) solid var(--border-color-primary);
-  padding: var(--padding-300) var(--padding-400);
 
   &:not(:last-child) {
     border-bottom: none;
@@ -14,9 +12,7 @@
     align-items: center;
     list-style: none;
     cursor: pointer;
-    font-size: var(--heading-4);
-    line-height: 1.33;
-    font-weight: 700;
+    line-height: 1.2;
 
     &::-webkit-details-marker {
       display: none;
@@ -51,7 +47,7 @@
   }
 
   &[open] {
-    border-color: var(--border-color-hover);
+    padding-bottom: var(--padding-200);
 
     summary::after {
       content: '-';
@@ -61,6 +57,10 @@
   &:hover,
   &:focus-within {
     border-color: var(--border-color-hover);
+  }
+
+  + details {
+    margin-top: var(--padding-200);
   }
 }
 

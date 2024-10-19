@@ -1,0 +1,17 @@
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--padding-200) var(--padding-500);
+  padding: 0 var(--page-margin-200);
+
+  .component {
+    padding: 0;
+    margin: 0;
+  }
+
+  &.count--2 {
+    .component {
+      flex: 1 1 calc(50% - var(--padding-500));
+    }
+  }
+}
