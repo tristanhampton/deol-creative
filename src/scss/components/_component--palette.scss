@@ -1,0 +1,32 @@
+.component--palette {
+  
+  h2 {
+    padding: 0 var(--page-margin-200);
+  }
+  
+  .flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .swatch {
+    flex: 1 1 10%;
+    aspect-ratio: 1 / 1;
+    margin: 0;
+
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        background-color: var(--blue-#{$i}00);
+      }
+
+      &:nth-child(#{$i + 10}) {
+        background-color: var(--orange-#{$i}00);
+      }
+
+      &:nth-child(#{$i + 20}) {
+        background-color: var(--yellow-#{$i}00);
+      }
+    }
+  }
+}

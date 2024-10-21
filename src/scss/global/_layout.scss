@@ -1,7 +1,7 @@
 html {
 	height: 100%;
 	font-family: sans-serif;
-	background-color: var(--white-1000);
+	background-color: var(--blue-1000);
 
 	body {
 		display: flex;
@@ -14,9 +14,12 @@ html {
 		flex: 1 0 auto;
 		display: flex;
 		flex-direction: column;
-		background-color: var(--surface-primary);
+		// background-color: var(--blue-900);
 		border-radius: 4rem;
 		overflow: hidden;
+		background-color: var(--blue-900);
+		background-size: var(--padding-600) var(--padding-600);
+		background-image: var(--paper-background);
 
 		main {
 			flex: 1 0 auto;
@@ -49,4 +52,8 @@ picture {
 	position: absolute !important;
 	width: 1px !important;
 	white-space: nowrap !important;
+}
+
+.mb-auto {
+	margin-bottom: auto;
 }

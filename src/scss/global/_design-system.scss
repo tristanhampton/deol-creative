@@ -4,11 +4,12 @@
   //set to 10px to use rem as font unit. 1.6rem = 16px
   font-size: 16px;
   font-size: 62.5%;
-  --font-size: 1.8rem;
+  --font-size: clamp(1.8rem, 1.5vw, 2.4rem);
 
   --baseline: 0.8rem;
   --col: 5vw;
 
+  --display: 5em;
   --heading-1: 2.66em; // 48
   --heading-2: 2.22em; // 40
   --heading-3: 1.77em; // 32
@@ -16,28 +17,11 @@
   --heading-5: 1.22em; // 
   --heading-6: 1em; // Not set in Manitoba yet
 
-  --font-large: 1.33em; // 24
+  --font-large: 1.55em; // 24
   --font-small: 0.88em; // 16
 
   img {
     filter: grayscale(100%);
-  }
-
-  @media screen and (max-width: 768px) {
-    --heading-1: 2.22em; // 40
-    --heading-2: 1.77em; // 32
-    --heading-3: 1.55em; // 28
-    --heading-4: 1.33em; // 24
-    --heading-5: 1.2em; // Not set in Manitoba yet
-    --heading-6: 1em; // Not set in Manitoba yet
-  }
-
-  @media screen and (min-width: 1900px) {
-    --font-size: 2rem;
-  }
-
-  @media screen and (min-width: 2400px) {
-    --font-size: 2.2rem;
   }
 }
 
@@ -60,6 +44,52 @@
   --system-green-500: #00B38F;
   --system-yellow-500: #FFE75D;
   --system-red-500: #DB6666;
+
+  // [Hex to HSL Converter](https://htmlcolors.com/hex-to-hsl)
+
+  // Blues
+  --hsl-blue: 199;
+  --blue-100: hsl(var(--hsl-blue), 90%, 10%);
+  --blue-200: hsl(var(--hsl-blue), 80%, 20%);
+  --blue-300: hsl(var(--hsl-blue), 80%, 30%);
+  --blue-400: hsl(var(--hsl-blue), 80%, 40%);
+  --blue-500: hsl(var(--hsl-blue), 80%, 50%);
+  --blue-600: hsl(var(--hsl-blue), 80%, 60%);
+  --blue-700: hsl(var(--hsl-blue), 80%, 70%);
+  --blue-800: hsl(var(--hsl-blue), 80%, 80%);
+  --blue-900: hsl(var(--hsl-blue), 80%, 90%);
+  --blue-1000: hsl(var(--hsl-blue), 80%, 95%);
+
+  // Oranges
+  --hsl-orange: 22;
+  --orange-100: hsl(var(--hsl-orange), 83%, 10%);
+  --orange-200: hsl(var(--hsl-orange), 83%, 20%);
+  --orange-300: hsl(var(--hsl-orange), 83%, 30%);
+  --orange-400: hsl(var(--hsl-orange), 83%, 40%);
+  --orange-500: hsl(var(--hsl-orange), 83%, 50%);
+  --orange-600: hsl(var(--hsl-orange), 83%, 60%);
+  --orange-700: hsl(var(--hsl-orange), 83%, 70%);
+  --orange-800: hsl(var(--hsl-orange), 83%, 80%);
+  --orange-900: hsl(var(--hsl-orange), 83%, 90%);
+  --orange-1000: hsl(var(--hsl-orange), 83%, 95%);
+
+  // Yellows
+  --hsl-yellow: 43;
+  --yellow-100: hsl(var(--hsl-yellow), 100%, 10%);
+  --yellow-200: hsl(var(--hsl-yellow), 100%, 20%);
+  --yellow-300: hsl(var(--hsl-yellow), 100%, 30%);
+  --yellow-400: hsl(var(--hsl-yellow), 100%, 40%);
+  --yellow-500: hsl(var(--hsl-yellow), 100%, 50%);
+  --yellow-600: hsl(var(--hsl-yellow), 100%, 60%);
+  --yellow-700: hsl(var(--hsl-yellow), 100%, 70%);
+  --yellow-800: hsl(var(--hsl-yellow), 100%, 80%);
+  --yellow-900: hsl(var(--hsl-yellow), 100%, 90%);
+  --yellow-1000: hsl(var(--hsl-yellow), 100%, 95%);
+
+  // Paper Background
+  --line: var(--blue-300);
+  --paper-background: repeating-linear-gradient(0deg, var(--line), var(--line); 1px, var(--blue-900) 1px, var(--blue-900));
+
 }
 
 /* Typography
@@ -199,8 +229,8 @@
 
   // Components
   --component-margin-top-child-pages: var(--padding-000);
-  --component-margin-top-first: var(--padding-400);
-  --component-margin-top-default: var(--padding-800);
+  --component-margin-top-first: var(--padding-500);
+  --component-margin-top-default: var(--padding-1000);
   --footer-margin-800: calc(var(--baseline) * 8);
 
   // Text
@@ -241,7 +271,7 @@
     
     --component-margin-top-child-pages: var(--padding-000);
     --component-margin-top-first: var(--padding-500);
-    --component-margin-top-default: var(--padding-1000);
+    --component-margin-top-default: calc(var(--baseline) * 14);
     --footer-margin-800: calc(var(--baseline) * 12);
   }
 

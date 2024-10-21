@@ -27,7 +27,8 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6 {
+.h6,
+.display {
   margin: 0;
   line-height: 1.2;
   font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
@@ -36,6 +37,12 @@ h6,
   path {
     fill: currentColor;
   }
+}
+
+.display {
+  font-size: var(--display);
+  font-weight: 800;
+  line-height: 1.2;
 }
 
 h1,
@@ -159,6 +166,14 @@ hr {
   margin-bottom: var(--padding-200);
   border: none;
   background-color: var(--surface-invert);
+}
+
+.text--large {
+  font-size: var(--font-large);
+}
+
+.text--small {
+  font-size: var(--font-small);
 }
 
 /* Typography Spacing
