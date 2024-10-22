@@ -1,7 +1,7 @@
 .columns {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--padding-200) var(--padding-500);
+  gap: var(--padding-300) var(--padding-500);
   padding: 0 var(--page-margin-200);
 
   .component {
@@ -11,7 +11,7 @@
 
   &.count--2 {
     .component {
-      flex: 1 1 calc(50% - var(--padding-500));
+      flex: 1 1 max(calc(50% - var(--padding-500)), 35ch);
     }
   }
 }

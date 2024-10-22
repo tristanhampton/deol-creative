@@ -9,8 +9,21 @@
   --baseline: 0.8rem;
   --col: 5vw;
 
-  --display-large: 5em;
-  --display-small: 3.5em;
+  --display-large: 3em;
+  --display-small: 2.8em;
+
+  
+  // --heading-1: 2.66em; // 48
+  // --heading-2: 2.22em; // 40
+  // --heading-3: 1.77em; // 32
+  // --heading-4: 1.33em; // 24
+  // --heading-5: 1.22em; // 
+  // --heading-6: 1em; // Not set in Manitoba yet
+
+  // --text-large: 1.55em; // 24
+  // --text-small: 0.88em; // 16
+
+  
   --heading-1: 2.66em; // 48
   --heading-2: 2.22em; // 40
   --heading-3: 1.77em; // 32
@@ -20,6 +33,11 @@
 
   --text-large: 1.55em; // 24
   --text-small: 0.88em; // 16
+
+  @media (min-width: 768px) {
+    --display-large: 5em;
+    --display-small: 3.5em;
+  }
 }
 
 /* Colours
