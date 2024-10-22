@@ -58,19 +58,19 @@ picture {
 body {
 	@for $i from 1 through 10 {
 		.mt-#{$i}00 {
-			margin-top: var(--margin-#{$i}00);
+			margin-top: var(--padding-#{$i}00);
 		}
 
 		.mb-#{$i}00 {
-			margin-bottom: var(--margin-#{$i}00);
+			margin-bottom: var(--padding-#{$i}00);
 		}
 
 		.ml-#{$i}00 {
-			margin-left: var(--margin-#{$i}00);
+			margin-left: var(--padding-#{$i}00);
 		}
 
 		.mr-#{$i}00 {
-			margin-right: var(--margin-#{$i}00);
+			margin-right: var(--padding-#{$i}00);
 		}
 	}
 }
