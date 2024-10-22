@@ -16,8 +16,6 @@ export const initForms = () => {
           const visibleSelector = formItem.dataset.visibleSelector;
           const visibleValue = formItem.dataset.visibleValue.split(' ');
 
-          console.log(visibleSelector, visibleValue)
-
           if (visibleSelector) {
             const visibleHandler = form.querySelector(`#${visibleSelector}`);
 

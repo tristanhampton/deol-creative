@@ -1,3 +1,12 @@
+:root {
+  --blob-1: 49% 51% 42% 58% / 35% 39% 61% 65%;
+  --blob-2: 49% 51% 42% 58% / 35% 39% 61% 65%;
+  --blob-3: 49% 51% 42% 58% / 35% 39% 61% 65%;
+  --blob-4: 49% 51% 42% 58% / 35% 39% 61% 65%;
+  --blob-5: 49% 51% 42% 58% / 35% 39% 61% 65%;
+  --blob-6: 49% 51% 42% 58% / 35% 39% 61% 65%;
+}
+
 /* Single Callout
  * ----------------------------------------------- */
 .callouts__callout {
@@ -14,12 +23,35 @@
     background-color: var(--blue-200);
     border-radius: 20rem;
     padding: 1.5em;
+    border-radius: var(--blob-1);
+
+    
 
     svg {
       width: 100%;
       height: 100%;
-      fill: var(--orange-700);
+      fill: var(--orange-600);
     }
+  }
+
+  &:nth-child(2n) .icon {
+    border-radius: var(--blob-2);
+  }
+
+  &:nth-child(3n) .icon {
+    border-radius: var(--blob-3);
+  }
+
+  &:nth-child(4n) .icon {
+    border-radius: var(--blob-4);
+  }
+
+  &:nth-child(5n) .icon {
+    border-radius: var(--blob-5);
+  }
+
+  &:nth-child(6n) .icon {
+    border-radius: var(--blob-6);
   }
 }
 
