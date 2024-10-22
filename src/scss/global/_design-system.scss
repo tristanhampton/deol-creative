@@ -76,20 +76,22 @@
   --orange-900: hsl(var(--hsl-orange), 83%, 67%);
   --orange-1000: hsl(var(--hsl-orange), 83%, 72%);
 
-  // Yellows
+  // Accents
   --hsl-yellow: 43;
-  --yellow-100: hsl(var(--hsl-yellow), 100%, 37%);
-  --yellow-200: hsl(var(--hsl-yellow), 100%, 40%);
-  --yellow-300: hsl(var(--hsl-yellow), 100%, 45%);
   --yellow-400: hsl(var(--hsl-yellow), 100%, 48%);
   --yellow-500: hsl(var(--hsl-yellow), 100%, 50%);
   --yellow-600: hsl(var(--hsl-yellow), 100%, 55%);
-  --yellow-700: hsl(var(--hsl-yellow), 100%, 58%);
-  --yellow-800: hsl(var(--hsl-yellow), 100%, 63%);
-  --yellow-900: hsl(var(--hsl-yellow), 100%, 67%);
-  --yellow-1000: hsl(var(--hsl-yellow), 100%, 72%);
 
-  // Accents
+  --hsl-red: 15;
+  --red-400: hsl(var(--hsl-red), 100%, 48%);
+  --red-500: hsl(var(--hsl-red), 100%, 50%);
+  --red-600: hsl(var(--hsl-red), 100%, 55%);
+
+  --hsl-teal: 175;
+  --teal-400: hsl(var(--hsl-teal), 100%, 48%);
+  --teal-500: hsl(var(--hsl-teal), 100%, 50%);
+  --teal-600: hsl(var(--hsl-teal), 100%, 70%);
+
 
 
   // Paper Background

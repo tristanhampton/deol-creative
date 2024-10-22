@@ -23,9 +23,19 @@
       &:nth-child(#{$i + 10}) {
         background-color: var(--orange-#{$i}00);
       }
+    }
+
+    @for $i from 4 through 6 {
+      &:nth-child(#{$i + 17}) {
+        background-color: var(--yellow-#{$i}00);
+      }
 
       &:nth-child(#{$i + 20}) {
-        background-color: var(--yellow-#{$i}00);
+        background-color: var(--red-#{$i}00);
+      }
+
+      &:nth-child(#{$i + 23}) {
+        background-color: var(--teal-#{$i}00);
       }
     }
   }

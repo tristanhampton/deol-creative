@@ -26,15 +26,15 @@
     }
 
     &:nth-child(2) {
-      background-color: var(--yellow-700);
+      background-color: var(--yellow-500);
     }
 
     &:nth-child(3) {
-      background-color: var(--orange-700);
+      background-color: var(--teal-600);
     }
 
     &:nth-child(4) {
-      background-color: var(--orange-800);
+      background-color: var(--red-500);
     }
 
     &:nth-child(5) {
@@ -42,19 +42,19 @@
     }
 
     &:nth-child(6) {
-      background-color: var(--blue-600);
+      background-color: var(--blue-800);
     }
 
     &:nth-child(7) {
-      background-color: var(--yellow-900);
+      background-color: var(--red-600);
     }
 
     &:nth-child(8) {
-      background-color: var(--orange-400);
+      background-color: var(--orange-800);
     }
 
     &:nth-child(9) {
-      background-color: var(--orange-800);
+      background-color: var(--teal-400);
     }
   }
 }
