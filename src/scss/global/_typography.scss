@@ -39,8 +39,14 @@ h6,
   }
 }
 
-.display {
-  font-size: var(--display);
+.text--display-large {
+  font-size: var(--display-large);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.text--display-small {
+  font-size: var(--display-small);
   font-weight: 800;
   line-height: 1.2;
 }
@@ -133,7 +139,7 @@ ul, ol {
 small {
   display: block;
   margin: 0;
-  font-size: var(--font-small);
+  font-size: var(--text-small);
 }
 
 cite {
@@ -169,11 +175,11 @@ hr {
 }
 
 .text--large {
-  font-size: var(--font-large);
+  font-size: var(--text-large);
 }
 
 .text--small {
-  font-size: var(--font-small);
+  font-size: var(--text-small);
 }
 
 /* Typography Spacing
@@ -266,16 +272,8 @@ main {
     margin-top: var(--padding-200);
   }
 
-  @media screen and (min-width: 768px) {
-
-    *+h3,
-    *+h4,
-    *+h5,
-    *+.h3,
-    *+.h4,
-    *+.h5 {
-      margin-top: var(--padding-400);
-    }
+  .sr-only + * {
+    margin-top: 0;
   }
 }
 

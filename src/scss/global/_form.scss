@@ -9,16 +9,21 @@ label {
 
 input[type="text"],
 input[type="date"],
+input[type="tel"],
+input[type="email"],
 textarea,
 select {
   width: 100%;
-  background: transparent;
-  border: var(--border-thickness-100) solid #000;
+  background-color: var(--blue-1000);
+  border: var(--border-thickness-100) solid var(--blue-400);
   padding: 0 var(--padding-100);
+  border-radius: 0.4rem;
 }
 
 input[type="text"],
 input[type="date"],
+input[type="tel"],
+input[type="email"],
 select {
   height: 2em;
 }
@@ -52,5 +57,9 @@ input[type="checkbox"] {
 
   &.form-item--check+.form-item--check {
     margin-top: var(--padding-200);
+  }
+
+  &.hidden {
+    display: none;
   }
 }
