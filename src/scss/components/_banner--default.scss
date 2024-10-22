@@ -1,3 +1,26 @@
 .banner--default {
   padding: var(--padding-600) var(--page-margin-200);
+  background-color: var(--blue-900);
+}
+
+[class*=banner] + .divider {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  svg {
+    min-width: 60rem;
+  }
+
+  .wave-1 {
+    fill: var(--blue-200)
+  }
+
+  .wave-2 {
+    fill: var(--orange-500)
+  }
+
+  .wave-3 {
+    fill: var(--blue-900);
+  }
 }
