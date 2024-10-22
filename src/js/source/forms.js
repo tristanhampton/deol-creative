@@ -1,3 +1,9 @@
+/**
+ * Initialize listeners for hidden form elements.
+ * Hidden elements should have two properties:
+ *  1. data-visible-selector="[input ID]" -> Matches ID of handler input, such as a select 
+ *  2. data-visible-value="[input value]" -> the value that will make it reveal
+ */
 export const initForms = () => {
   const forms = document.querySelectorAll('form');
   

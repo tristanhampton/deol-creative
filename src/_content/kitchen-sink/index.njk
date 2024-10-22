@@ -141,30 +141,43 @@ title: "Kitchen Sink"
   </div>
 </section>
 
-<form action="" class="component component--form">
-  <h2>Forms</h2>
+<section class="component component--form" id="contact">
+  <h2>Ask us anything!</h2>
   
-  <div class="form-item">
-    <label for="">Text Input</label>
-    <input type="text">
-  </div>
+  <form action="">
+    
+    <div class="form-item">
+      <label for="name">Name</label>
+      <input type="text" required>
+    </div>
 
-  <div class="form-item">
-    <label for="">Select</label>
-    <select name="" id="">
-      <option value="">None</option>
-      <option value="">Option 1</option>
-      <option value="">Option 2</option>
-    </select>
-  </div>
+    <div class="form-item">
+      <label for="preferred-contact">Preferred contact</label>
+      <select name="preferred-contact" id="preferred-contact">
+        <option value="">Select</option>
+        <option value="phone">Phone</option>
+        <option value="email">Email</option>
+        <option value="text">Text</option>
+      </select>
+    </div>
 
-  <div class="form-item">
-    <label for="">Text Area</label>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-  </div>
+    <div class="form-item hidden" data-visible-selector="preferred-contact" data-visible-value="email">
+      <label for="email">Email</label>
+      <input type="email">
+    </div>
 
-  <div class="form-item">
-    <label for="">Date</label>
-    <input type="date">
-  </div>
-</form>
+    <div class="form-item hidden" data-visible-selector="preferred-contact" data-visible-value="phone text">
+      <label for="tel">Phone</label>
+      <input type="tel">
+    </div>
+
+    <div class="form-item">
+      <label for="question">Question</label>
+      <textarea name="" id="" cols="30" rows="10" required></textarea>
+    </div>
+
+    <div class="form-item">
+      <button type="submit" class="btn-primary">Send!</button>
+    </div>
+  </form>
+</section>

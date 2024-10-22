@@ -3,6 +3,8 @@
 .header__logo {
   text-decoration: none;
   color: var(--text-primary);
+  width: 100%;
+  max-width: 8rem;
 
   &:visited {
     color: var(--text-primary);
