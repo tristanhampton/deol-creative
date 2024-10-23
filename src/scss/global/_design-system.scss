@@ -65,16 +65,17 @@
 
   // Oranges
   --hsl-orange: 23;
-  --orange-100: hsl(var(--hsl-orange), 83%, 37%);
-  --orange-200: hsl(var(--hsl-orange), 83%, 40%);
-  --orange-300: hsl(var(--hsl-orange), 83%, 45%);
-  --orange-400: hsl(var(--hsl-orange), 83%, 48%);
-  --orange-500: hsl(var(--hsl-orange), 83%, 50%);
-  --orange-600: hsl(var(--hsl-orange), 83%, 55%);
-  --orange-700: hsl(var(--hsl-orange), 83%, 58%);
-  --orange-800: hsl(var(--hsl-orange), 83%, 63%);
-  --orange-900: hsl(var(--hsl-orange), 83%, 67%);
-  --orange-1000: hsl(var(--hsl-orange), 83%, 72%);
+  --hsl-orange: 28;
+  --orange-100: hsl(var(--hsl-orange), 90%, 37%);
+  --orange-200: hsl(var(--hsl-orange), 90%, 40%);
+  --orange-300: hsl(var(--hsl-orange), 90%, 45%);
+  --orange-400: hsl(var(--hsl-orange), 90%, 48%);
+  --orange-500: hsl(var(--hsl-orange), 90%, 50%);
+  --orange-600: hsl(var(--hsl-orange), 90%, 55%);
+  --orange-700: hsl(var(--hsl-orange), 90%, 58%);
+  --orange-800: hsl(var(--hsl-orange), 90%, 63%);
+  --orange-900: hsl(var(--hsl-orange), 90%, 67%);
+  --orange-1000: hsl(var(--hsl-orange), 90%, 72%);
 
   // Accents
   --hsl-yellow: 43;
@@ -132,15 +133,15 @@
   @media screen and (min-width: 768px) {
     --vertical-type-spacing-size-xs: 1;
     --vertical-type-spacing-size-sm: 2;
-    --vertical-type-spacing-size-med: 3;
+    --vertical-type-spacing-size-med: 2;
     --vertical-type-spacing-size-lrg: 3;
   }
 
   @media screen and (min-width: 1020px) {
     --vertical-type-spacing-size-xs: 1;
     --vertical-type-spacing-size-sm: 2;
-    --vertical-type-spacing-size-med: 3;
-    --vertical-type-spacing-size-lrg: 3;
+    --vertical-type-spacing-size-med: 4;
+    --vertical-type-spacing-size-lrg: 5;
   }
 }
 
@@ -300,9 +301,9 @@
   }
 
   @media screen and (min-width: 2400px) {
-    --page-margin-100: calc(var(--col)*4);
-    --page-margin-200: calc(var(--col)*4);
-    --page-margin-500: calc(var(--col)*6);
+    --page-margin-100: calc(var(--col)*5);
+    --page-margin-200: calc(var(--col)*5);
+    --page-margin-500: calc(var(--col)*7);
     --component-margin-top-first: var(--padding-700);
     --component-margin-top-default: calc(var(--baseline) * 14);
     --footer-margin-800: calc(var(--baseline) * 16);

@@ -53,14 +53,13 @@ og_title: "11ty Starter Home Page"
 <section class="component component--cta">
   <h2>See if we are right for you. (We totally are.)</h2>
   <p>Get a guided tour</p>
-  <a href="#contact" class="btn-primary">Book a call</a>
+  <a href="https://calendly.com/designjoy/designjoy-intro-1?month=2024-02" class="btn-primary">Book a call</a>
 </section>
 
 <div class="component columns count--2">
   <div class="component component--quote-card style--stretch">
     <div class="component-wrapper">
-      <p class="h4">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, saepe."</p>
-      <cite>John Doe</cite>
+      {% include 'graphics/team-up.njk' %}
     </div>
   </div>
   <div class="component component--text-block">
@@ -68,7 +67,7 @@ og_title: "11ty Starter Home Page"
     <h3 class="h3">Totally async</h3>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, blanditiis debitis recusandae vel ratione voluptatum.</p>
 
-    <h3 class="h3">Manage with Trello</h3>
+    <h3 class="h3">Manage with Pumble</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sed placeat numquam iusto esse laboriosam!</p>
 
     <h3 class="h3">Invite your team</h3>
@@ -125,10 +124,8 @@ og_title: "11ty Starter Home Page"
   </div>
 </section>
 
-</hr class="display">
-
 <section class="component component--pills">
-  <h2>Lorem, ipsum dolor.</h2>
+  <h2>We can do it all</h2>
 
   <div class="flex-wrapper">
     <span class="pills__pill">Landing pages</span>
@@ -152,8 +149,6 @@ og_title: "11ty Starter Home Page"
     {% galleryItem '/img/og-default.jpg', 'Just a default image, but as a caption', 'gallery-1' %}
     {% galleryItem '/img/og-default.jpg', 'Just a default image, but as a caption', 'gallery-1' %}
   </div>
-
-  <a href="" class="btn-primary">See more work</a>
 </div>
 
 <div class="component columns count--2" id="plans">
@@ -161,13 +156,9 @@ og_title: "11ty Starter Home Page"
     <div class="component-wrapper">
       <h2 class="text--display-small">Have questions?</h2>
       <p class="mb-auto">Book a call and ask away!</p>
-      <a href="" class="btn-display">
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, saepe.</p>
-      </a>
-      <a href="" class="btn-display">
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, saepe.</p>
+      <a href="https://calendly.com/designjoy/designjoy-intro-1?month=2024-02" class="btn-display">
+        <p>Schedule a time with us</p>
+        <p>Getting your designs is easier than you think</p>
       </a>
     </div>
   </div>
@@ -190,7 +181,6 @@ og_title: "11ty Starter Home Page"
 
       <div class="button-wrapper">
         <a href="#contact" class="btn-primary">Get started</a>
-        <a href="/" class="btn-secondary">Book a call</a>
       </div>
     </div>
   </div>
@@ -238,7 +228,7 @@ og_title: "11ty Starter Home Page"
 <section class="component component--cta">
   <h2>Lorem ipsum dolor sit amet (consectetur adipisicing elit)</h2>
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, quia? Eius quasi deserunt, vel nisi deleniti blanditiis nostrum dolorem eum!</p>
-  <a href="" class="btn-primary">See plans</a>
+  <a href="#contact" class="btn-primary">See plans</a>
 </section>
 
 <section class="component component--form" id="contact">
@@ -276,7 +266,7 @@ og_title: "11ty Starter Home Page"
       <textarea name="" id="" cols="30" rows="10" required></textarea>
     </div>
 
-    <div class="form-item">
+    <div class="form-item button-wrapper">
       <button type="submit" class="btn-primary">Send!</button>
     </div>
   </form>

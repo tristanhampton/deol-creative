@@ -4,10 +4,18 @@
   .component-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: var(--padding-300);
     background-color: var(--white-1000);
     padding: var(--padding-300);
     border-radius: 2rem;
+  }
+
+  svg {
+    width: 100%;
+    max-width: 54rem;
+    height: auto;
   }
 
   p {
@@ -17,7 +25,6 @@
   &.style--stretch {
     .component-wrapper {
       height: 100%;
-      justify-content: space-between;
     }
   }
 }

@@ -125,6 +125,7 @@ ul, ol {
 
   &.list-columns {
     column-count: 2;
+    column-width: 20rem;
   }
 }
 
@@ -151,6 +152,7 @@ cite {
 b,
 strong {
   font-weight: 700;
+  color: var(--orange-500)
 }
 
 em {
@@ -205,7 +207,7 @@ main {
 
   h2+*,
   .h2+* {
-    margin-top: var(--vertical-type-spacing-med);
+    margin-top: var(--vertical-type-spacing-sm);
   }
 
   h2 + div,
@@ -225,7 +227,7 @@ main {
   h6+*,
   .h5+*,
   .h6+* {
-    margin-top: var(--vertical-type-spacing-xs);
+    margin-top: var(--vertical-type-spacing-sm);
   }
 
   *+h2,
@@ -239,7 +241,7 @@ main {
   *+.h3,
   *+.h4,
   *+.h5 {
-    margin-top: var(--padding-500);
+    margin-top: var(--vertical-type-spacing-med);
   }
 
   *+h6,
@@ -260,16 +262,16 @@ main {
 
   ul,
   ol {
-    padding-left: var(--padding-200);
+    padding-left: 1em;
 
     ul,
     ol {
-      padding-left: var(--padding-200);
+      padding-left: 1em;
     }
   }
 
   li+li {
-    margin-top: var(--padding-200);
+    margin-top: var(--vertical-type-spacing-xs);
   }
 
   .sr-only + * {

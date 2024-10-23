@@ -14,8 +14,8 @@ input[type="email"],
 textarea,
 select {
   width: 100%;
-  background-color: var(--blue-1000);
-  border: var(--border-thickness-100) solid var(--blue-400);
+  background-color: hsl(var(--hsl-blue), 80%, 95%, 0.4);
+  border: var(--border-thickness-200) solid var(--blue-400);
   padding: 0 var(--padding-100);
   border-radius: 0.4rem;
 }

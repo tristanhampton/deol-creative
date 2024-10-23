@@ -3,8 +3,8 @@ html {
 	font-family: sans-serif;
 	background-color: var(--white-1000);
 	scroll-behavior: smooth;
-
-	body {
+	
+	.site-outer {
 		display: flex;
 		flex-direction: column;
 		padding: 0 var(--padding-200) var(--padding-200);

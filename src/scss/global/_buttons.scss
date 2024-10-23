@@ -32,9 +32,9 @@
 
 @mixin btn-primary {
   @include btn-defaults;
-  background-color: var(--text-primary);
+  background-color: var(--blue-200);
   color: var(--text-invert-primary);
-  border: 0.2rem solid var(--text-primary);
+  border: 0.2rem solid var(--blue-200);
 
   &:visited {
     color: var(--text-invert-primary);
@@ -42,8 +42,9 @@
 
   &:hover,
   &:focus {
-    color: var(--button-primary-color-hover);
-    background-color: var(--button-primary-surface-hover);
+    color: var(--text-invert-primary);
+    background-color: var(--blue-500);
+    border-color: var(--blue-500)
   }
 }
 
@@ -67,12 +68,12 @@
 @mixin btn-display {
   @include btn-defaults;
   padding: var(--padding-200);
-  border: 0.1rem solid #FFF;
-  color: #FFF;
+  border: 0.1rem solid var(--white-1000);
+  color: var(--white-1000);
   padding-right: var(--padding-400);
 
   &:visited {
-    color: #FFF;
+    color: var(--white-1000);
   }
 
   * {
@@ -81,6 +82,12 @@
 
   p:first-child {
     font-size: var(--heading-4);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--text-primary);
+    background-color: var(--white-1000);
   }
 }
 
@@ -94,4 +101,15 @@
 
 .btn-display {
   @include btn-display;
+}
+
+.button-wrapper {
+  @media screen and (max-width: 500px) {
+    width: 100%;
+
+    [class*=btn] {
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
