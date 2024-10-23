@@ -38,7 +38,7 @@ export default function(eleventyConfig) {
 	});
 
 	eleventyConfig.addShortcode('galleryItem', (img, caption, galleryID) => {
-		return `<a class="gallery__item" href="${img}" data-fancybox="${galleryID}" data-caption="${caption}"><img src="${img}"></a> `;
+		return `<a class="gallery__item" aria-label="Open image in gallery view" href="${img}" data-fancybox="${galleryID}" data-caption="${caption}"><img src="${img}" alt=""></a> `;
 	});
 
 	//--- Determine if local or live
