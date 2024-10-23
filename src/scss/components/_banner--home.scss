@@ -2,12 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--padding-300);
   padding: var(--padding-1000) var(--page-margin-200);
   text-align: center;
   background-color: var(--blue-900);
-
-  * {
-    margin: 0;
-  }
 }

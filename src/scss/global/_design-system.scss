@@ -9,7 +9,7 @@
   --baseline: 0.8rem;
   --col: 5vw;
 
-  --display-large: 3em;
+  --display-large: 2.8em;
   --display-small: 2.5em;
   --heading-1: 2.66em; // 48
   --heading-2: 2.22em; // 40
@@ -119,9 +119,9 @@
 
   // Vertical Spacing
   --vertical-type-spacing-size-xs: 1;
-  --vertical-type-spacing-size-sm: 1;
+  --vertical-type-spacing-size-sm: 2;
   --vertical-type-spacing-size-med: 2;
-  --vertical-type-spacing-size-lrg: 2;
+  --vertical-type-spacing-size-lrg: 3;
 
   --vertical-type-spacing-xs: calc(var(--baseline) * var(--vertical-type-spacing-size-xs));
   --vertical-type-spacing-sm: calc(var(--baseline) * var(--vertical-type-spacing-size-sm));
@@ -141,7 +141,7 @@
     --vertical-type-spacing-size-xs: 1;
     --vertical-type-spacing-size-sm: 2;
     --vertical-type-spacing-size-med: 4;
-    --vertical-type-spacing-size-lrg: 5;
+    --vertical-type-spacing-size-lrg: 4;
   }
 }
 

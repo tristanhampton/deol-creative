@@ -58,8 +58,10 @@
     text-align: left;
 
     .icon {
-      width: 3.5em;
-      height: 3.5em;
+      width: 6rem;
+      min-width: 6rem;
+      height: 6rem;
+      min-height: 6rem;
       padding: 0.8em;
     }
   }
@@ -110,6 +112,12 @@
   }
 
   @media (max-width: 500px) {
+    text-align: left;
+
+    h2 {
+      text-align: left;
+    }
+
     &.columns--3 .callouts__callout,
     .callouts__callout {
       flex: 1 1 100%;

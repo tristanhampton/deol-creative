@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // gap: var(--padding-200);
   padding: 0 var(--page-margin-200);
   text-align: center;
 
@@ -14,7 +13,8 @@
     font-size: var(--text-large)
   }
 
-  // * {
-  //   margin: 0;
-  // }
+  @media (max-width: 500px) {
+    display: block;
+    text-align: left;
+  }
 }
