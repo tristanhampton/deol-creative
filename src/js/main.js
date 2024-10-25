@@ -2,6 +2,7 @@ const { initMediaGalleries } = require("./source/media-gallery");
 const { initNavigation } = require("./source/navigation");
 const { initForms } = require("./source/forms");
 const { initBlobs } = require("./source/blob");
+const { initAnimations } = require("./source/animation");
 
 
 (() => {
@@ -9,4 +10,5 @@ const { initBlobs } = require("./source/blob");
   initMediaGalleries();
   initForms();
   initBlobs();
+  initAnimations();
 })();

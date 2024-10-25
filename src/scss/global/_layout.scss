@@ -3,6 +3,10 @@ html {
 	font-family: sans-serif;
 	background-color: var(--white-1000);
 	scroll-behavior: smooth;
+
+	body {
+		overflow-x: hidden;
+	}
 	
 	.site-outer {
 		display: flex;

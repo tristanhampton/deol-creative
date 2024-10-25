@@ -1,0 +1,140 @@
+/* Animations
+ * ----------------------------------------------- */
+.animate--slide-up {
+  @media (prefers-reduced-motion: no-preference) {
+    translate: -30% 0;
+    opacity: 0;
+    animation-name: fade-up;
+    animation-play-state: paused;
+    animation-duration: 0.8s;
+  }
+}
+
+.animate--slide-left {
+  @media (prefers-reduced-motion: no-preference) {
+    translate: 0 -30%;
+    opacity: 0;
+    animation-name: fade-left;
+    animation-play-state: paused;
+    animation-duration: 0.8s;
+  }
+}
+
+.animate--slide-right {
+  @media (prefers-reduced-motion: no-preference) {
+    translate: -30% 0;
+    opacity: 0;
+    animation-name: fade-right;
+    animation-play-state: paused;
+    animation-duration: 0.8s;
+  }
+}
+
+.animate--slide-down {
+  @media (prefers-reduced-motion: no-preference) {
+    translate: 30% 0;
+    opacity: 0;
+    animation-name: fade-down;
+    animation-play-state: paused;
+    animation-duration: 0.8s;
+  }
+}
+
+.animate--roll-left {
+  @media (prefers-reduced-motion: no-preference) {
+    translate: 50vw 0;
+    animation-name: roll-left;
+    animation-play-state: paused;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+  }
+}
+
+/* Control class
+ * ----------------------------------------------- */
+// When this is added, the animation will start
+.animate {
+  @media (prefers-reduced-motion: no-preference) {
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+  
+    // We don't want delays on mobile since they will be stacked
+    @media screen and (min-width: 768px) {
+      @for $i from 1 through 10 {
+        &.animate--delay-#{$i} {
+          animation-delay: #{($i - 1) * 0.3}s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fade-right {
+  from {
+    translate: -30% 0;
+    opacity: 0;
+  }
+
+  to {
+    translate: 0 0;
+    opacity: 100%;
+  }
+}
+
+@keyframes fade-left {
+  from {
+    translate: 30% 0;
+    opacity: 0;
+  }
+
+  to {
+    translate: 0 0;
+    opacity: 100%;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    translate: 0 30%;
+    opacity: 0;
+  }
+
+  to {
+    translate: 0 0;
+    opacity: 100%;
+  }
+}
+
+@keyframes fade-down {
+  from {
+    translate: 0 -30%;
+    opacity: 0;
+  }
+
+  to {
+    translate: 0 0;
+    opacity: 100%;
+  }
+}
+
+@keyframes roll-left {
+  0% {
+    translate: 50vw 0;
+    rotate: 720deg
+  }
+
+  65% {
+    translate: -5rem 0;
+    rotate: -45deg;
+  }
+
+  67% {
+    translate: -5rem 0;
+    rotate: -45deg;
+  }
+
+  100% {
+    translate: 0 0;
+    rotate: 0;
+  }
+}
