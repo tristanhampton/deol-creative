@@ -14,7 +14,6 @@ const isElementIsScrolled = el => {
 }
 
 const animateElements = (els) => {
-  console.log(els)
   els.forEach((el, i) => {
     if (isElementIsScrolled(el)) {
       el.classList.add('animate');
