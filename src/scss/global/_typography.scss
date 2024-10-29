@@ -152,7 +152,7 @@ cite {
 b,
 strong {
   font-weight: 700;
-  color: var(--orange-500)
+  color: var(--orange-500);
 }
 
 em {
@@ -182,6 +182,14 @@ hr {
 
 .text--small {
   font-size: var(--text-small);
+}
+
+.color--blue {
+  color: var(--pure-blue-500);
+}
+
+.color--purple {
+  color: var(--purple-500);
 }
 
 /* Typography Spacing

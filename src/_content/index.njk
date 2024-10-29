@@ -6,7 +6,7 @@ og_title: "Deol Creative"
 <section class="banner banner--home" id="banner">
   <div class="animation-wrapper animate--slide-up">
     <h1 class="text--display-large">Graphic Design with a subscription!</h1>
-    <p class="text--large">Pause or cancel any time</p>
+    <p class="text--large">Unlimited designs and changes.</p>
     <a href="#plans" class="btn-primary">See plans</a>
   </div>
 </section>
@@ -67,13 +67,13 @@ og_title: "Deol Creative"
   <div class="component component--text-block animate--slide-left">
     <h2 class="sr-only">Working with us</h2>
     <h3 class="h3">Totally async</h3>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, blanditiis debitis recusandae vel ratione voluptatum.</p>
+    <p>Save time by skipping meetings and awkward small talk!</p>
 
     <h3 class="h3">Manage with Pumble</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sed placeat numquam iusto esse laboriosam!</p>
+    <p>Submit and manage projects with ease using our project management tool. Communicate and submit projects all in one place!</p>
 
     <h3 class="h3">Invite your team</h3>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, asperiores!</p>
+    <p>Have your team keep track of progress and allow anyone to submit a design</p>
   </div>
 </div>
 
@@ -107,7 +107,7 @@ og_title: "Deol Creative"
       <span class="icon">
         {% include 'icons/dumbbell.njk' %}
       </span>
-      <p>We are Flexible! Cancel or Pause anytime!</p>
+      <p>Invite the whole team so anyone can submit a design</p>
     </div>
 
     <div class="callouts__callout animate--slide-up animate--delay-2">
@@ -142,21 +142,21 @@ og_title: "Deol Creative"
   </div>
 </section>
 
-<div class="component component--media-gallery spacing--reduced">
+{# <div class="component component--media-gallery spacing--reduced">
   <div class="gallery-wrapper animate--slide-up">
     {% galleryItem '/img/og-default.jpg', 'Just a default image, but as a caption', 'gallery-1' %}
     {% galleryItem '/img/og-default.jpg', 'Just a default image, but as a caption', 'gallery-1' %}
     {% galleryItem '/img/og-default.jpg', 'Just a default image, but as a caption', 'gallery-1' %}
   </div>
-</div>
+</div> #}
 
 <div class="component columns count--2" id="plans">
   <div class="component component--cta--styled animate--slide-up">
     <div class="component-wrapper">
-      <h2 class="text--display-small">Have questions?</h2>
+      <h2>Have questions?</h2>
       <p class="mb-auto">Book a call and ask away!</p>
       <a href="https://calendly.com/designjoy/designjoy-intro-1" class="btn-display">
-        <p>Schedule a time with us</p>
+        <p>Book a call</p>
         <p>Getting your designs is easier than you think</p>
       </a>
     </div>
@@ -165,7 +165,7 @@ og_title: "Deol Creative"
   <div class="component component--text-block style--card animate--slide-left">
     <div class="component-wrapper">
       <h2>Membership</h2>
-      <p class="h3 mt-100">$4,995/m</p>
+      <p class="h3 mt-100">$1,995/m</p>
       <p>One design at a time. Pause or cancel any time.</p>
       <hr>
       <p>What's included:</p>
@@ -245,7 +245,17 @@ og_title: "Deol Creative"
     </div>
 
     <div class="form-item">
-      <label for="preferred-contact">Preferred contact</label>
+      <label for="company-name">Company name</label>
+      <input type="text" required name="company-name" id="company-name">
+    </div>
+
+    <div class="form-item">
+      <label for="website">Website</label>
+      <input type="text" required name="website" id="website">
+    </div>
+
+    <div class="form-item">
+      <label for="preferred-contact">Preferred contact - email or call</label>
       <select name="preferred-contact" id="preferred-contact">
         <option value="">Select</option>
         <option value="phone">Phone</option>
@@ -265,8 +275,8 @@ og_title: "Deol Creative"
     </div>
 
     <div class="form-item">
-      <label for="question">Question</label>
-      <textarea cols="30" rows="10" required name="question" id="question"></textarea>
+      <label for="message">Message</label>
+      <textarea cols="30" rows="10" required name="message" id="message"></textarea>
     </div>
 
     <div class="form-item button-wrapper">

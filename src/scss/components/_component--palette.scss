@@ -37,6 +37,14 @@
       &:nth-child(#{$i + 23}) {
         background-color: var(--teal-#{$i}00);
       }
+
+      &:nth-child(#{$i + 27}) {
+        background-color: var(--purple-#{$i}00);
+      }
+
+      &:nth-child(#{$i + 30}) {
+        background-color: var(--pure-blue-#{$i}00);
+      }
     }
   }
 }
