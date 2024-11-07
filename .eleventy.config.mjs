@@ -37,8 +37,12 @@ export default function(eleventyConfig) {
 			<iframe class="yt-shortcode" src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube video player${title ? ` for ${title}` : ""}" frameborder="0" allowfullscreen></iframe>`;
 	});
 
-	eleventyConfig.addShortcode('galleryItem', (img, caption, galleryID) => {
-		return `<a class="gallery__item" aria-label="Open image in gallery view" href="${img}" data-fancybox="${galleryID}" data-caption="${caption}"><img src="${img}" alt="" width="400" height="400"></a> `;
+	eleventyConfig.addShortcode('galleryItem', (img, caption, galleryID, link) => {
+		if (link) {
+			return `<a class="gallery__item" aria-label="Open image in gallery view" href="${img}" data-fancybox="${galleryID}" data-caption="${caption}"><img src="${img}" alt="" width="400" height="400"></a> `;
+		} else {
+			return `<div class="gallery__item no-link"><img src="${img}" alt="" width="400" height="400"></div> `;
+		}
 	});
 
 	//--- Determine if local or live

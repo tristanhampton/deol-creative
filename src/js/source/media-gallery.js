@@ -6,11 +6,14 @@ export const initMediaGalleries = () => {
   if (galleries) {
     galleries.forEach(gallery => {
       const singleItem = gallery.querySelector('[data-fancybox]');
-      const galleryID = singleItem.getAttribute('data-fancybox');
 
-      Fancybox.bind(`[data-fancybox="${galleryID}"]`, {
-        // Your custom options for a specific gallery
-      });
+      if (singleItem) {
+        const galleryID = singleItem.getAttribute('data-fancybox');
+  
+        Fancybox.bind(`[data-fancybox="${galleryID}"]`, {
+          // Your custom options for a specific gallery
+        });
+      }
     })
   }
 }
