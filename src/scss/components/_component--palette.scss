@@ -43,7 +43,7 @@
       }
 
       &:nth-child(#{$i + 30}) {
-        background-color: var(--pure-blue-#{$i}00);
+        background-color: var(--dark-blue-#{$i}00);
       }
     }
   }

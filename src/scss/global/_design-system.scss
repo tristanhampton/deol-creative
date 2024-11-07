@@ -51,7 +51,7 @@
   // [Hex to HSL Converter](https://htmlcolors.com/hex-to-hsl)
 
   // Blues
-  --hsl-blue: 199;
+  --hsl-blue: 202;
   --blue-100: hsl(var(--hsl-blue), 90%, 10%);
   --blue-200: hsl(var(--hsl-blue), 80%, 20%);
   --blue-300: hsl(var(--hsl-blue), 80%, 30%);
@@ -98,10 +98,10 @@
   --purple-500: hsl(var(--hsl-purple), 45%, 60%);
   --purple-600: hsl(var(--hsl-purple), 45%, 72%);
 
-  --hsl-pure-blue: 227;
-  --pure-blue-400: hsl(var(--hsl-pure-blue), 100%, 32%);
-  --pure-blue-500: hsl(var(--hsl-pure-blue), 100%, 40%);
-  --pure-blue-600: hsl(var(--hsl-pure-blue), 100%, 48%);
+  --hsl-dark-blue: 227;
+  --dark-blue-400: hsl(var(--hsl-dark-blue), 85%, 48%);
+  --dark-blue-500: hsl(var(--hsl-dark-blue), 85%, 57%);
+  --dark-blue-600: hsl(var(--hsl-dark-blue), 85%, 63%);
 
 
   // Paper Background
