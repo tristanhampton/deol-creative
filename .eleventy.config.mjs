@@ -1,4 +1,5 @@
 import os from 'os';
+import 'dotenv/config';
 
 if (!process.env.SITE) {
   console.warn("Missing SITE env, defaulting to site-1")

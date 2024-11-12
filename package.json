@@ -7,16 +7,18 @@
     "build:site": "npx @11ty/eleventy --config=.eleventy.config.mjs",
     "build:assets": "webpack --config webpack.config.prod.js",
     "build": "npm-run-all build:assets build:site",
-    "dev:site": "npx @11ty/eleventy --config=.eleventy.config.mjs --serve",
+    "dev:design": "SITE=design npx @11ty/eleventy --config=.eleventy.config.mjs --serve",
+    "dev:development": "SITE=development npx @11ty/eleventy --config=.eleventy.config.mjs --serve",
     "dev:assets": "webpack --config webpack.config.dev.js",
-    "dev": "npm-run-all --parallel dev:assets dev:site"
+    "dev": "npm-run-all --parallel dev:assets dev:design dev:development"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@sindresorhus/slugify": "^2.2.1"
+    "@sindresorhus/slugify": "^2.2.1",
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
     "@jamshop/eleventy-filter-dump": "^1.0.4",
