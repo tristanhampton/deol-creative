@@ -4,7 +4,7 @@
   &.style--card {
     .component-wrapper {
       padding: var(--padding-300) var(--padding-300);
-      background-color: #FFF;
+      background-color: var(--surface-tertiary);
       border-radius: 2rem;
     }
   }

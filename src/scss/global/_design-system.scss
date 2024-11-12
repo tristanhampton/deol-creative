@@ -114,11 +114,13 @@
  * ----------------------------------------------- */
 :root {
   --text-primary: var(--black-000);
-  --text-secondary: var(--grey-500);
+  --text-invert: var(--white-1000);
 
-  --text-link-primary: var(--system-green-500);
-  --text-link-visited: var(--system-green-500);
-  --text-link-hover: var(--system-yellow-500);
+  --text-bold: var(--dark-blue-500);
+
+  // --text-link-primary: var(--system-green-500);
+  // --text-link-visited: var(--system-green-500);
+  // --text-link-hover: var(--system-yellow-500);
 
   --text-invert-primary: var(--white-1000);
   --text-invert-secondary: var(--grey-800);
@@ -158,19 +160,19 @@
  * ----------------------------------------------- */
 // Surface variables essentially work out to be background colours for things like CTA's, Tiles, etc
 :root {
-  --surface-primary: var(--grey-900);
-  --surface-invert: var(--system-green-500);
-  --surface-hover: var(--system-green-500);
+  --surface-primary: var(--blue-1000); // banners
+  --surface-secondary: var(--blue-900); // content background
+  --surface-tertiary: var(--white-1000); // quote cards
+  --surface-accent-primary: var(--orange-900); // accordions
+  --surface-accent-secondary: var(--blue-100); // callouts
 
-  --surface-secondary: var(--grey-900);
+  --surface-invert: var(--black-000); // inverted cards
 
-  --surface-navigation-primary: var(--grey-900);
-  --surface-navigation-secondary: var(--grey-900);
+  --surface-link-primary: var(--blue-200);
+  --surface-link-hover: var(--blue-500);
 
-  --surface-link-primary: var(--system-green-500);
-  --surface-link-hover: var(--system-green-500);
   --surface-link-invert: var(--white-1000);
-  --surface-link-invert-hover: var(--system-green-500);
+
   --surface-disabled: var(--grey-500);
 
   --surface-alert: var(--system-yellow-500);
@@ -181,10 +183,9 @@
 /* Icons
 * ----------------------------------------------- */
 :root {
-  --icon-primary: var(--grey-200);
-  --icon-invert-primary: var(--white-1000);
-  --icon-secondary: var(--grey-500);
-  --icon-invert-secondary: var(--grey-900);
+  --icon-primary: var(--blue-200);
+  --icon-secondary: var(--purple-500);
+  --icon-tertiary: var(--blue-900);
 }
 
 /* Borders

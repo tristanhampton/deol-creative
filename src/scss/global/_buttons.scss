@@ -32,9 +32,9 @@
 
 @mixin btn-primary {
   @include btn-defaults;
-  background-color: var(--blue-200);
+  background-color: var(--surface-link-primary);
   color: var(--text-invert-primary);
-  border: 0.2rem solid var(--blue-200);
+  border: 0.2rem solid var(--surface-link-primary);
 
   &:visited {
     color: var(--text-invert-primary);
@@ -43,8 +43,8 @@
   &:hover,
   &:focus {
     color: var(--text-invert-primary);
-    background-color: var(--blue-500);
-    border-color: var(--blue-500)
+    background-color: var(--surface-link-hover);
+    border-color: var(--surface-link-hover)
   }
 }
 
@@ -68,12 +68,12 @@
 @mixin btn-display {
   @include btn-defaults;
   padding: var(--padding-200);
-  border: 0.1rem solid var(--white-1000);
-  color: var(--white-1000);
+  border: 0.1rem solid var(--text-invert-primary);
+  color: var(--text-invert-primary);
   padding-right: var(--padding-400);
 
   &:visited {
-    color: var(--white-1000);
+    color: var(--text-invert-primary);
   }
 
   * {
@@ -87,7 +87,7 @@
   &:hover,
   &:focus {
     color: var(--text-primary);
-    background-color: var(--white-1000);
+    background-color: var(--surface-link-invert);
   }
 }
 
