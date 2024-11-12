@@ -1,0 +1,18 @@
+.site--development {
+  background-color: var(--blue-000);
+
+  --surface-primary: var(--blue-200);
+  --surface-secondary: var(--blue-100);
+  --surface-display: linear-gradient(rgba(7, 63, 95, 0.9) 1px, transparent 1px), linear-gradient(to right, rgba(7, 63, 95, 0.9) 1px, rgb(3, 32, 48) 1px);
+
+  --text-primary: var(--white-1000);
+  --text-bold: var(--blue-700);
+
+  --surface-accent-secondary: var(--orange-100);
+
+  --icon-primary: var(--purple-500);
+  --icon-secondary: var(--blue-300);
+  --icon-tertiary: var(--orange-900);
+
+
+}

@@ -52,6 +52,7 @@
 
   // Blues
   --hsl-blue: 202;
+  --blue-000: hsl(var(--hsl-blue), 90%, 5%);
   --blue-100: hsl(var(--hsl-blue), 90%, 10%);
   --blue-200: hsl(var(--hsl-blue), 87%, 20%);
   --blue-300: hsl(var(--hsl-blue), 87%, 30%);
@@ -114,6 +115,7 @@
  * ----------------------------------------------- */
 :root {
   --text-primary: var(--black-000);
+  --text-tertiary: var(--black-000);
   --text-invert: var(--white-1000);
 
   --text-bold: var(--dark-blue-500);
@@ -177,7 +179,7 @@
 
   --surface-alert: var(--system-yellow-500);
 
-  --surface-code-view: var(--grey-900);
+  --surface-display: linear-gradient(rgb(209, 237, 250, 0.9) 1px, transparent 1px), linear-gradient(to right, rgb(209, 237, 250, 0.9) 1px, rgb(232, 246, 252) 1px);
 }
 
 /* Icons
