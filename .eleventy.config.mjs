@@ -1,10 +1,21 @@
 import os from 'os';
 
+if (!process.env.SITE) {
+  console.warn("Missing SITE env, defaulting to site-1")
+}
+
+const site = process.env.SITE || "design";
+const input = `./src/_sites/${site}/`;
+const output = `_sites/${site}`;
+
+
 export default function(eleventyConfig) {
 	// 11ty uses gitignore to ignore watching files. Disable this.
 	eleventyConfig.setUseGitIgnore(false);
 
 	eleventyConfig.setQuietMode(true);
+
+	eleventyConfig.setDataFileBaseName("_config");
 
 	// We're setting 11ty to build when scss/js is updated, but we want a delay so that the assets have time to build
 	eleventyConfig.setWatchThrottleWaitTime(120);
@@ -45,6 +56,10 @@ export default function(eleventyConfig) {
 		}
 	});
 
+	eleventyConfig.addGlobalData('multisite', function () {
+		return site;
+	});
+
 	//--- Determine if local or live
 	eleventyConfig.addGlobalData('local', function () {
 		const hostname = os.hostname();
@@ -58,11 +73,11 @@ export default function(eleventyConfig) {
 
 	return {
 		dir: {
-			input: "./src/_content",
-			output: "_site",
-			layouts: "../_layouts",
-			includes: "../_includes",
-			data: "../_data"
+			input: input,
+			output: output,
+			layouts: "../../_layouts",
+			includes: "../../_includes",
+			data: "../../_data"
 		}
 	}
 }

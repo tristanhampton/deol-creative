@@ -1,4 +1,6 @@
 node_modules
 _site
+./_sites
 .DS_Store
 _dist
+.env
