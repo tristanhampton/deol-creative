@@ -23,6 +23,10 @@
 		<meta name="twitter:card" content="{{ twitter_card if twitter_card else site.twitter_card }}">
 	{% endif %}
 
+	{% if noindex %}
+		<meta name="robots" content="noindex">
+	{% endif %}
+
   {% if site.GTM_ID %}
     <!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWWZP2MRRV"></script>
