@@ -20,7 +20,8 @@
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@sindresorhus/slugify": "^2.2.1",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "netlify-plugin-cache": "^1.0.3"
   },
   "devDependencies": {
     "@jamshop/eleventy-filter-dump": "^1.0.4",
