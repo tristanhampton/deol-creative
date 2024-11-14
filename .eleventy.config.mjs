@@ -42,6 +42,9 @@ export default function(eleventyConfig) {
 	//--- Adds fonts to _site
 	eleventyConfig.addPassthroughCopy({ "src/fonts": "fonts" });
 
+	//--- Adds fonts to _site
+	eleventyConfig.addPassthroughCopy({ "_redirects": "" });
+
 	eleventyConfig.addShortcode("youtube", (videoURL, title) => {
 		const url = new URL(videoURL);
 		const id = url.searchParams.get("v");
