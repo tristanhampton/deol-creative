@@ -125,3 +125,13 @@
     }
   }
 }
+
+.site--development .callouts__callout {
+  .icon {
+    background-color: var(--surface-accent-primary);
+
+    svg {
+      fill: #FFF;
+    }
+  }
+}

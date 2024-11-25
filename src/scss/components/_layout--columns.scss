@@ -14,4 +14,10 @@
       flex: 1 1 max(calc(50% - var(--padding-500)), 35ch);
     }
   }
+
+  &.count--3 {
+    .component {
+      flex: 1 1 max(calc(33.333% - var(--padding-500)), 20ch);
+    }
+  }
 }

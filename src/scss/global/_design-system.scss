@@ -188,6 +188,8 @@
   --icon-primary: var(--blue-200);
   --icon-secondary: var(--purple-500);
   --icon-tertiary: var(--blue-900);
+
+  --graphic-accent: var(--icon-secondary);
 }
 
 /* Borders
@@ -357,6 +359,7 @@
   --input-border: var(--border-thickness-200) solid var(--border-color-primary);
   --focus-state-border: var(--blue-700);
   --input-border-radius: var(--radius-frame-300);
+  --input-background: hsl(var(--hsl-blue), 80%, 95%, 0.4);
 
   --select-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12.07,15.21c.07-.11,6.47-6.58,9.62-9.71a1.08,1.08,0,0,1,.56-.31.72.72,0,0,1,.51.19c.33.28.62.6.93.9s.41.72,0,1.13L12.51,18.58a.62.62,0,0,1-1,0L.34,7.45c-.46-.46-.46-.74,0-1.2l.81-.81a.68.68,0,0,1,1.1,0Z'/%3E%3C/svg%3E%0A");
 

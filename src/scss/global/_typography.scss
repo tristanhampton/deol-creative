@@ -126,6 +126,10 @@ ul, ol {
   &.list-columns {
     column-count: 2;
     column-width: 20rem;
+
+    li {
+      break-inside: avoid;
+    }
   }
 }
 
