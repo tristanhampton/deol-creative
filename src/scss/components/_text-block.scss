@@ -7,6 +7,11 @@
       background-color: var(--surface-tertiary);
       color: var(--text-tertiary);
       border-radius: 2rem;
+      height: 100%;
+    }
+
+    .button-wrapper {
+      margin-top: auto;
     }
   }
 }
