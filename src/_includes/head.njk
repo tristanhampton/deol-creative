@@ -39,8 +39,8 @@
 		</script>
   {% endif %}
 
-	<!-- Meta Pixel Code (Design) -->
-	{% if site == 'design' %}
+	{% if multisite == 'design' %}
+		<!-- Meta Pixel Code (Design) -->
 		<script>
 			!function(f,b,e,v,n,t,s)
 			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -57,8 +57,8 @@
 		<!-- End Meta Pixel Code -->
 	{% endif %}
 
-	{% if site == 'dev' %}
-		<!-- Meta Pixel Code -->
+	{% if multisite == 'development' %}
+		<!-- Meta Pixel Code (Dev) -->
 		<script>
 			!function(f,b,e,v,n,t,s)
 			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
